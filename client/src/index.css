@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  background: #eeeeee;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#main h1 {
+  color: #444444;
+  text-align: center;
+}
+
+#main {
+  padding: 0px;
+  box-sizing: border-box;
+  width: 58%;
+  height: 100%;
+}
+
+#book-list {
+  padding: 0;
+}
+
+#book-list li {
+  display: inline-block;
+  margin: 12px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #880e4f;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 3);
+  cursor: pointer;
+  color: #880e4f;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 50px;
+  width: 40vw;
+  margin-left: 100px;
+}
+
+form.field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+form label {
+  text-align: right;
+  padding: 6px;
+}
+
+form select,
+form input {
+  margin: 4px;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+form button {
+  color: #fff;
+  font-size: 2em;
+  background: #ad1457;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  bottom: 10px;
+  left: 300px;
+}
+
+#book-details {
+  color: #fff;
+  width: 40%;
+  height: 100%;
+  background: #ad1457;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: auto;
+  padding: 30px;
+}
