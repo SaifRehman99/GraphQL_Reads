@@ -2,10 +2,11 @@ const app = require('express')();
 const { graphqlHTTP } = require('express-graphql');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const { MONGOURI } = require('./config');
 
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb+srv://SAIF:saif@cluster0.pb5oy.azure.mongodb.net/graphQL?retryWrites=true&w=majority', {
+    await mongoose.connect(MONGOURI, {
       useNewUrlParser: true,
       useCreateIndex: true,
       useFindAndModify: false,
